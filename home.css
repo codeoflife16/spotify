@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #121212;
+    color: white;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 1.2s ease-in;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #1db954;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.artist-card {
+    background-color: #181818;
+    border-radius: 15px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.artist-card img {
+    width: 100%;
+    border-radius: 12px;
+    height: 220px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.artist-card h2 {
+    font-size: 1.2rem;
+    margin: 15px 0 10px;
+    color: #ffffff;
+}
+
+.artist-card p {
+    font-size: 0.95rem;
+    color: #a1a1a1;
+}
+
+.artist-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(29,185,84,0.6);
+}
+a.artist-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border-radius: 15px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .artist-card h2 {
+        font-size: 1rem;
+    }
+
+    .artist-card p {
+        font-size: 0.85rem;
+    }
+}
