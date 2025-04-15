@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+body {
+    background-color: blanchedalmond;
+}
+ *{
+    margin:0;
+    padding:0;
+ }
+nav {
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1db954; /* Spotify green or your theme */
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+nav ul li.brand {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li.brand img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    background-color: #12803c;
+}
+
+.brand img {
+    width: 45px;  
+    height: 45px; 
+    margin-right: 8px; 
+    object-fit: cover;
+    border-radius: 4px;
+    padding: 0 8px;
+}
+.brand
+{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container {
+    min-height: 75vh;
+    background-color: black;
+    background-image: url('https://www.shutterstock.com/image-photo/beautiful-singing-girl-curly-afro-600nw-1335999635.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); /* optional for readability */
+}
+
+.bottom
+{
+    position: sticky;
+    bottom:0
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 30px;
+    color: white
+}
+#myProgressBar
+{
+
+    width: 80vw;
+    cursor: pointer;
+}
+.icons
+{
+    margin-top: 14px;
+}
+.icons i {
+    margin: 0 15px;
+    cursor: pointer;
+    color: #511f50;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icons i:hover {
+    transform: scale(1.2) translateY(-4px);
+    color: #a02796;
+}
+.icons i:hover {
+    transform: scale(1.2);
+    color: #a02796;
+    text-shadow: 0 0 10px #a02796, 0 0 20px #a02796;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.icons i {
+    margin: 0 15px;
+    cursor: pointer;
+    color: #511f50;
+    animation: pulse 2s infinite;
+}
+.icons i:hover {
+    transform: scale(1.2) translateY(-3px);
+    color: #a02796;
+    text-shadow: 0 0 10px #a02796, 0 0 20px #a02796;
+}
+
+.songItem {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    border-radius: 34px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.songItem img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.songItemContent {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.songList {
+    margin-top: 40px; /* Or 50px, 60px, etc., adjust to your liking */
+}
+
+.timestamp
+{
+    margin: 0 23px;
+}
+.timestamp i
+{
+    cursor: pointer;
+}
+
+.songInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+    flex-grow: 1; /* Make the song info take as much space as possible */
+    justify-content: flex-start; /* Align song name to the left */
+}
+.songInfo img
+{
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+#currentSongName {
+    font-size: 1.3rem; /* Larger font size */
+    font-weight: bold; /* Bold font */
+    margin-left: 10px; /* Spacing between image and text */
+}
